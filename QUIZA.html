@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quz.css">
+</head>
+<body>
+    <div class="container">
+        <h1><p>SECTION A</p></h1>
+   Q1. What is 3+5 ?<br>
+   A.&nbsp;&nbsp;<input type="radio" name="question1" >5<br>
+   B.&nbsp;&nbsp;<input type="radio" name="question1" id="correct1" >8<br>
+   C.&nbsp;&nbsp;<input type="radio" name="question1" >7<br>
+   D.&nbsp;&nbsp;<input type="radio" name="question1" >4<br>
+
+
+   Q2. What is 36-6 ?<br>
+   A.&nbsp;&nbsp;<input type="radio" name="question2" >5<br>
+   B.&nbsp;&nbsp;<input type="radio" name="question2" >8<br>
+   C.&nbsp;&nbsp;<input type="radio" name="question2" id="correct2" >30<br>
+   D.&nbsp;&nbsp;<input type="radio" name="question2" >4<br>
+
+   Q3. What is 5+5 ?<br>
+   A.&nbsp;&nbsp;<input type="radio" name="question3" >5<br>
+   B.&nbsp;&nbsp;<input type="radio" name="question3" >8<br>
+   C.&nbsp;&nbsp;<input type="radio" name="question3" >7<br>
+   D.&nbsp;&nbsp;<input type="radio" name="question3" id="correct3" >10<br>
+
+   <input type="submit" name="submit" value="submit quiz" onclick="result()" id="sbt">
+</div>
+   <script>
+    function result() {
+        var score = 0;
+        if (document.getElementById('correct1').checked){
+            score++;
+        }
+        if (document.getElementById('correct2').checked){
+            score++;
+        }
+        if (document.getElementById('correct3').checked){
+            score++;
+        }
+        document.write("Your have scored:" +score);
+
+    }
+   </script>
+</body>
+</html>
